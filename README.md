@@ -1,5 +1,5 @@
 # 20250331_Vdes_sRNA
 ## 2025/03/31 Moving Bam file(NN263dedup.mapcolVdes_3.0.bam) to my work space
 ```bash
-cp N263dedup.mapcolVdes_3.0.bam //work/h-tamaki/20250331_Vdes_sRNA
+cp //project/okamura-lab-hpc/20250310_Varroa_sRNA/N263dedup.mapcolVdes_3.0.bam //work/h-tamaki/20250331_Vdes_sRNA
 ```
