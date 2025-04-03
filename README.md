@@ -9,3 +9,7 @@ cp //project/okamura-lab-hpc/20250310_Varroa_sRNA/N263dedup.mapcolVdes_3.0.bam /
 conda create -n shortstack -c bioconda shortstack
 ```
 
+## 2025/04/03 ShortStack Test Run
+```bash
+20250403_Vdes_ShortStack.run
+```
