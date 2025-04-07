@@ -11,5 +11,6 @@ conda create -n shortstack -c bioconda shortstack
 
 ## 2025/04/03 ShortStack Test Run
 ```bash
-20250403_Vdes_ShortStack.run
+20250403_Vdes_ShortStack_test.run 20250403_Vdes_ShortStack_test.log
 ```
+
