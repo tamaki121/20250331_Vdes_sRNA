@@ -12,5 +12,68 @@ conda create -n shortstack -c bioconda shortstack
 ## 2025/04/03 ShortStack Test Run
 ```bash
 20250403_Vdes_ShortStack_test.run 20250403_Vdes_ShortStack_test.log
+
+
+ShortStack version 4.1.1
+
+Beginning run
+Options:
+{   'adapter': None,
+    'align_only': False,
+    'autotrim': False,
+    'autotrim_key': 'TCGGACCAGGCTTCATTCCCC',
+    'autotrim_only': False,
+    'bamfile': [   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/N261dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/N263dedup.mapcolVdes_3.0.bam'],
+    'dicermax': 50,
+    'dicermin': 18,
+    'dn_mirna': False,
+    'genomefile': '/work/h-tamaki/mRNA_UCSC/DIR_fna/GCF_002443255.1_Vdes_3.0_genomic.fa',
+    'known_miRNAs': None,
+    'locifile': None,
+    'locus': None,
+    'make_bigwigs': False,
+    'mincov': 1,
+    'mmap': 'u',
+    'nohp': False,
+    'outdir': '/work/h-tamaki/20250331_Vdes_sRNA/20250404_Vdes_N263_N261Test',
+    'pad': 200,
+    'readfile': None,
+    'strand_cutoff': 0.8,
+    'threads': 1}
+Required executable RNAfold : /work/h-tamaki/tools/miniforge3/envs/shortstack/bin/RNAfold
+Required executable strucVis : /work/h-tamaki/tools/miniforge3/envs/shortstack/bin/strucVis
+Required executable samtools : /work/h-tamaki/tools/miniforge3/envs/shortstack/bin/samtools
+
+Fri 04 Apr 2025 15:00:33 +0900 JST
+Defining small RNA clusters de novo
+With 9680609 total reads and mincov of 1 reads per million, the min read depth is 10
+
+Fri 04 Apr 2025 15:04:00 +0900 JST
+Analyzing cluster properties using 1 threads
+
+Fri 04 Apr 2025 15:05:12 +0900 JST
+ Completed
+
+Writing final files
+
+Non-MIRNA loci by DicerCall:
+18 395
+22 165
+20 151
+19 150
+23 141
+24 121
+21 84
+30 40
+28 38
+29 32
+25 23
+27 18
+26 17
+
+Fri 04 Apr 2025 15:05:12 +0900 JST
+Run Completed!
+
 ```
 
