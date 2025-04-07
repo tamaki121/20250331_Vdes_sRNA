@@ -9,7 +9,11 @@ cp //project/okamura-lab-hpc/20250310_Varroa_sRNA/N263dedup.mapcolVdes_3.0.bam /
 conda create -n shortstack -c bioconda shortstack
 ```
 
-## 2025/04/03 ShortStack Test Run
+## 2025/04/03 ShortStack Test Run  
+Test runs were performed against the N261 and N263 libraries.  
+Details of these libraries can be found on the following links.
+https://docs.google.com/spreadsheets/d/1nR3Zh3I6SoTMR8Lx9IYan7XHd-CtLZys/edit?gid=156060293#gid=156060293
+
 ```bash
 20250403_Vdes_ShortStack_test.run 20250403_Vdes_ShortStack_test.log
 
