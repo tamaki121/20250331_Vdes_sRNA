@@ -1,0 +1,71 @@
+
+ShortStack version 4.1.1
+
+Beginning run
+Options:
+{   'adapter': None,
+    'align_only': False,
+    'autotrim': False,
+    'autotrim_key': 'TCGGACCAGGCTTCATTCCCC',
+    'autotrim_only': False,
+    'bamfile': [   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N258dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N259dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N260dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N261dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N262dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N263dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N265dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N266dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N267dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N268dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N269dedup.mapcolVdes_3.0.bam',
+                   '/work/h-tamaki/20250331_Vdes_sRNA/BamFile/Test/N270dedup.mapcolVdes_3.0.bam'],
+    'dicermax': 50,
+    'dicermin': 18,
+    'dn_mirna': False,
+    'genomefile': '/work/h-tamaki/mRNA_UCSC/DIR_fna/GCF_002443255.1_Vdes_3.0_genomic.fa',
+    'known_miRNAs': None,
+    'locifile': None,
+    'locus': None,
+    'make_bigwigs': False,
+    'mincov': 1,
+    'mmap': 'u',
+    'nohp': False,
+    'outdir': '/work/h-tamaki/20250331_Vdes_sRNA/20250409_Vdes_AllLibraries',
+    'pad': 200,
+    'readfile': None,
+    'strand_cutoff': 0.8,
+    'threads': 1}
+Required executable RNAfold : /work/h-tamaki/tools/miniforge3/envs/shortstack/bin/RNAfold
+Required executable strucVis : /work/h-tamaki/tools/miniforge3/envs/shortstack/bin/strucVis
+Required executable samtools : /work/h-tamaki/tools/miniforge3/envs/shortstack/bin/samtools
+
+Thu 10 Apr 2025 19:40:51 +0900 JST
+Defining small RNA clusters de novo
+With 67640305 total reads and mincov of 1 reads per million, the min read depth is 68
+
+Thu 10 Apr 2025 19:44:44 +0900 JST
+Analyzing cluster properties using 1 threads
+
+Thu 10 Apr 2025 19:51:42 +0900 JST
+ Completed
+
+Writing final files
+
+Non-MIRNA loci by DicerCall:
+18 330
+20 269
+23 211
+24 178
+22 144
+19 134
+21 55
+28 33
+29 32
+30 24
+25 21
+26 14
+27 14
+
+Thu 10 Apr 2025 19:51:42 +0900 JST
+Run Completed!

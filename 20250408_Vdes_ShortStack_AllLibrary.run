@@ -1,0 +1,37 @@
+#!/bin/bash
+#SBATCH -t 4:00:00
+#SBATCH -p cluster_short
+#SBATCH -J 20240130_B168-182MapToPalLabGenomeQuants.run
+#SBATCH -n 130
+#SBATCH --mem 0
+#SBATCH --mail-user=tamaki.hirotaka.te4@naist.ac.jp
+#SBATCH --mail-type=ALL
+
+# Set up virtual environment
+source ~/tools/miniforge3/etc/profile.d/conda.sh
+
+
+conda activate shortstack
+
+
+#Submitted batch job 3468339 2025/04/09 17:29 All Libraries
+
+#Submitted batch job 3468355 2025/04/09 21:27 All Libraries Failed
+#Submitted batch job 3468356 2025/04/09 21:41 All_test      Failed
+#Submitted batch job 3468398 2025/04/10 10:38 All_Libraries
+
+# パスの定義
+WorkSpace="/work/h-tamaki/20250331_Vdes_sRNA"
+
+Vdes_genome="/work/h-tamaki/mRNA_UCSC/DIR_fna/GCF_002443255.1_Vdes_3.0_genomic.fa"
+
+# N258~N20(except N264)
+Bam_file="${WorkSpace}/BamFile/Test"
+
+
+ShortStack \
+    --bamfile ${Bam_file}/*.bam \
+    --genome ${Vdes_genome} \
+    --outdir ${WorkSpace}/20250409_Vdes_AllLibraries \
+    --dicermin 18 \
+    --dicermax 50
