@@ -160,7 +160,11 @@ Run Completed!
 
 ## 2025/04/16 BamtoFastq and Remapping to Clusters identified by ShortStack
 ### Reference
-
+Remappingで使用したRefereceは、20250408_Vdes_ShortStack_AllLibrary.runで特定されたClusterをGCF_002443255.1_Vdes_3.0_genomic.faとmergeさせて、
+配列を取得した。
+```bash
+Bedtools getfasta -fi GCF_002443255.1_Vdes_3.0_genomic.fa -bed ShotStack_Reference.bed -fo temp.fa -name
+```
 
 ### Build index
 ```bash
