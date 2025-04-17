@@ -35,11 +35,14 @@ Sam_file=${Bam_file%.bam}_mapped.sam
 echo "$Fastq_file"
 echo "$Sam_file"
 
+# Revert Bam to Fastq
+samtools bam2fq ${Bam_file} > ${Fastq_file}
 
-#samtools bam2fq ${Bam_file} > ${Fastq_file}
+# Mapping Fast to Cluster 
+bowtie -M 10 -q ${Ref_index} ${Fastq_file} -S ${Sam_file}
 
-#bowtie -M 10 -q ${Ref_index} ${Fastq_file} -S ${Sam_file}
+cp ${Bam_file} ${Fastq_file} /project/okamura-lab-hpc/V_destructor/tamaki/20250416_BamtoFastq_Mapping/
 
-
+# Referece file is also saved /project/okamura-lab-hpc/V_destructor/tamaki/20250416_BamtoFastq_Mapping/Reference/
 
 
