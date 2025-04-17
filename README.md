@@ -164,6 +164,14 @@ Remappingで使用したRefereceは、20250408_Vdes_ShortStack_AllLibrary.runで
 配列を取得した。
 ```bash
 Bedtools getfasta -fi GCF_002443255.1_Vdes_3.0_genomic.fa -bed ShotStack_Reference.bed -fo temp.fa -name
+mv temp.fa ShotStack_Reference.fa
+
+>ShotStack_Reference.fa
+Cluster_1 Sequence
+Cluster_2 Sequence
+・
+・
+・
 ```
 
 ### Build index
