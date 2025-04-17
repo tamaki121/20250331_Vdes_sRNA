@@ -158,7 +158,7 @@ Thu 10 Apr 2025 19:51:42 +0900 JST
 Run Completed!
 ```
 
-## 2025/04/16 BamtoFastq and Remapping to Clusters picked up by ShortStack
+## 2025/04/16 BamtoFastq and Remapping to Clusters identified by ShortStack
 ### Reference
 
 
