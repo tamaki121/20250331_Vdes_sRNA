@@ -1,0 +1,45 @@
+#!/bin/bash
+#SBATCH -t 4:00:00
+#SBATCH -p cluster_short
+#SBATCH -J 20240130_B168-182MapToPalLabGenomeQuants.run
+#SBATCH -n 130
+#SBATCH --mem 0
+#SBATCH --mail-user=tamaki.hirotaka.te4@naist.ac.jp
+#SBATCH --mail-type=ALL
+
+# Set up virtual environment
+source ~/tools/miniforge3/etc/profile.d/conda.sh
+
+
+conda activate test
+
+#Submitted batch job 3470222 2025/04/16 
+#Submitted batch job 3470234 2025/04/16 15:45 
+#Submitted batch job 3470237 2025/04/16 15:49
+
+
+# パスの定義
+WorkSpace="/work/h-tamaki/20250331_Vdes_sRNA"
+
+Vdes_genome="/work/h-tamaki/mRNA_UCSC/DIR_fna/GCF_002443255.1_Vdes_3.0_genomic.fa"
+
+# N258~N20(except N264)
+Bam_file="${WorkSpace}/BamFile/Test/N260dedup.mapcolVdes_3.0.bam"
+Ref_index="/work/h-tamaki/20250331_Vdes_sRNA/BamtoFastq/ShotStack_Reference"
+
+echo "$Bam_file"
+
+Fastq_file=${Bam_file%.bam}.fastq
+Sam_file=${Bam_file%.bam}_mapped.sam
+
+echo "$Fastq_file"
+echo "$Sam_file"
+
+
+#samtools bam2fq ${Bam_file} > ${Fastq_file}
+
+#bowtie -M 10 -q ${Ref_index} ${Fastq_file} -S ${Sam_file}
+
+
+
+
