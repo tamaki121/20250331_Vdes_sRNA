@@ -157,3 +157,27 @@ Non-MIRNA loci by DicerCall:
 Thu 10 Apr 2025 19:51:42 +0900 JST
 Run Completed!
 ```
+
+## 2025/04/16 BamtoFastq and Remapping to Clusters picked up by ShortStack
+### Reference
+
+
+### Build index
+```bash
+bowtie-build ShotStack_Reference.fa ShotStack_Reference
+```
+
+### Rever Bam to Fastq and Mapping
+```bash
+20250416_BamtoFastq_Remapping.run
+20250416_BamtoFastq_Remapping.log
+
+[M::bam2fq_mainloop] discarded 0 singletons
+[M::bam2fq_mainloop] processed 7440455 reads
+Warning: -M was specified w/o --best; automatically enabling --best
+# reads processed: 7440455
+# reads with at least one reported alignment: 3993972 (53.68%)
+# reads that failed to align: 427068 (5.74%)
+# reads with alignments sampled due to -M: 3019415 (40.58%)
+Reported 3993972 alignments to 1 output stream(s)
+```
