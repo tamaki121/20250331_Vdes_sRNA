@@ -192,7 +192,7 @@ Warning: -M was specified w/o --best; automatically enabling --best
 Reported 3993972 alignments to 1 output stream(s)
 ```
 
-### Revert each bamfile to fastq and Mapping
+### Revert each bamfile to fastq and Mapping(2025/04/20)
 ```bash
 20250420_BamtoFastq_parallel.run
 20250420_MappingtoShortStack_parallell.run
