@@ -177,7 +177,7 @@ ATGGAGTGTG...
 bowtie-build ShotStack_Reference.fa ShotStack_Reference
 ```
 
-### Rever Bam to Fastq and Mapping
+### Revert Bam to Fastq and Mapping
 ```bash
 20250416_BamtoFastq_Remapping.run
 20250416_BamtoFastq_Remapping.log
@@ -190,4 +190,16 @@ Warning: -M was specified w/o --best; automatically enabling --best
 # reads that failed to align: 427068 (5.74%)
 # reads with alignments sampled due to -M: 3019415 (40.58%)
 Reported 3993972 alignments to 1 output stream(s)
+```
+
+### Revert each bamfile to fastq and Mapping
+```bash
+20250420_BamtoFastq_parallel.run
+20250420_MappingtoShortStack_parallell.run
+```
+
+```bash
+for i in {58..70}; do
+    sbatch ${Script} ${i}
+done
 ```
