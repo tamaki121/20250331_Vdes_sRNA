@@ -203,3 +203,13 @@ for i in {58..70}; do
     sbatch ${Script} ${i}
 done
 ```
+
+### Calculate RPM(2025/05/11)
+```bash
+20250423_CalculateRPM.run
+20250510_CalculateRPM_EachTissue.R
+```
+20250423_caluclateRPM.runで再マッピングしたsamファイルのRPMを計算した。  
+その後、20250510_CalculateRPM_EachTissu.Rで組織ごとの平均値を出して、それぞれのTSVのデータを手動でVdes_AllLibrary(N258-N270,exceptN264).xlsxに張り付けた。  
+スクリプトで合併しようとすると、値がおかしくなったので手動で張り付けた。  
+
