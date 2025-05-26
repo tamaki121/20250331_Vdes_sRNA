@@ -23,7 +23,7 @@ Vdes_genome="../data/reference/GCF_002443255.2_Vdes_3.0_genomic.fa"
 Bam_file="../data/seq"
 
 
-
+#MajorRNA_T_blast.fastaは、shortstackの結果から、Cluaster名とMajorRNA列を抜き出して張り付けた。
 blastn -query ../data/miRGeneDB/MajorRNA_T_blast.fasta -db ../data/miRGeneDB/ALL-mature_db -out ../result/results_blast_E001.txt \
        -evalue 0.01 \
        -word_size 7 \
