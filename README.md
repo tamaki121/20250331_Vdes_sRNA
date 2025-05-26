@@ -213,3 +213,15 @@ done
 その後、20250510_CalculateRPM_EachTissu.Rで組織ごとの平均値を出して、それぞれのTSVのデータを手動でVdes_AllLibrary(N258-N270,exceptN264).xlsxに張り付けた。  
 スクリプトで合併しようとすると、値がおかしくなったので手動で張り付けた。  
 
+### Re ShortStack and MajorRNA(2025/05/25, 26)
+```bash
+ReShortStack
+20250525_Vdes_All.log
+20250525_Vdes_All.run
+
+MajorRNA Blast
+20250526_Blast_miRGeneDB_AllSpecies.run
+```
+
+
+
