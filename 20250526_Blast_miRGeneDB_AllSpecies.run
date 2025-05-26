@@ -1,0 +1,32 @@
+#!/bin/bash
+#SBATCH -t 4:00:00
+#SBATCH -p cluster_short
+#SBATCH -J 20240130_B168-182MapToPalLabGenomeQuants.run
+#SBATCH -n 130
+#SBATCH --mem 0
+#SBATCH --mail-user=tamaki.hirotaka.te4@naist.ac.jp
+#SBATCH --mail-type=ALL
+
+# Set up virtual environment
+source ~/tools/miniforge3/etc/profile.d/conda.sh
+
+
+#conda activate shortstack
+
+
+#Submitted batch job 3495633 2025/05/25 23:22
+#Submitted batch job 3495704 2025/05/26 14:30 E-value 10
+#Submitted batch job 3495768 2025/05/26 16:30
+WorkSpace="/work/h-tamaki/20250525_Vdes_sRNA"
+
+Vdes_genome="../data/reference/GCF_002443255.2_Vdes_3.0_genomic.fa"
+Bam_file="../data/seq"
+
+
+
+blastn -query ../data/miRGeneDB/MajorRNA_T_blast.fasta -db ../data/miRGeneDB/ALL-mature_db -out ../result/results_blast_E001.txt \
+       -evalue 0.01 \
+       -word_size 7 \
+       -dust no \
+       -task blastn-short \
+       -outfmt 6

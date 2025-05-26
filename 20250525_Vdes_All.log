@@ -1,0 +1,89 @@
+
+ShortStack version 4.1.1
+
+Beginning run
+Options:
+{   'adapter': None,
+    'align_only': False,
+    'autotrim': False,
+    'autotrim_key': 'TCGGACCAGGCTTCATTCCCC',
+    'autotrim_only': False,
+    'bamfile': [   '../data/seq/2024B007_01_perfect_Varroa.bam',
+                   '../data/seq/2024B007_02_perfect_Varroa.bam',
+                   '../data/seq/2024B007_03_perfect_Varroa.bam',
+                   '../data/seq/2024B007_04_perfect_Varroa.bam',
+                   '../data/seq/2024B007_05_perfect_Varroa.bam',
+                   '../data/seq/2024B007_06_perfect_Varroa.bam',
+                   '../data/seq/2024B007_07_perfect_Varroa.bam',
+                   '../data/seq/2024B007_08_perfect_Varroa.bam',
+                   '../data/seq/2024B007_09_perfect_Varroa.bam',
+                   '../data/seq/2024B007_10_perfect_Varroa.bam',
+                   '../data/seq/2024B007_11_perfect_Varroa.bam',
+                   '../data/seq/2024B007_12_perfect_Varroa.bam',
+                   '../data/seq/2024B007_13_perfect_Varroa.bam'],
+    'dicermax': 50,
+    'dicermin': 18,
+    'dn_mirna': False,
+    'genomefile': '../data/reference/GCF_002443255.2_Vdes_3.0_genomic.fa',
+    'known_miRNAs': None,
+    'locifile': None,
+    'locus': None,
+    'make_bigwigs': False,
+    'mincov': 1,
+    'mmap': 'u',
+    'nohp': False,
+    'outdir': '../result/',
+    'pad': 200,
+    'readfile': None,
+    'strand_cutoff': 0.8,
+    'threads': 1}
+Required executable RNAfold : /work/h-tamaki/tools/miniforge3/envs/shortstack/bin/RNAfold
+Required executable strucVis : /work/h-tamaki/tools/miniforge3/envs/shortstack/bin/strucVis
+Required executable samtools : /work/h-tamaki/tools/miniforge3/envs/shortstack/bin/samtools
+
+Sun 25 May 2025 21:54:47 +0900 JST
+Defining small RNA clusters de novo
+With 79852409 total reads and mincov of 1 reads per million, the min read depth is 80
+
+Sun 25 May 2025 21:58:42 +0900 JST
+Analyzing cluster properties using 1 threads
+
+Sun 25 May 2025 22:06:58 +0900 JST
+ Completed
+
+Writing final files
+
+Non-MIRNA loci by DicerCall:
+N 2201
+20 191
+23 178
+24 154
+22 127
+19 47
+21 47
+18 42
+32 28
+33 26
+35 20
+28 14
+34 13
+30 12
+25 12
+26 10
+31 10
+29 9
+27 9
+36 9
+40 7
+37 7
+38 6
+42 4
+46 2
+45 2
+47 2
+49 1
+39 1
+44 1
+
+Sun 25 May 2025 22:06:58 +0900 JST
+Run Completed!
